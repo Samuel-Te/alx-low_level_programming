@@ -6,10 +6,9 @@
 int main(void)
 {
   char ch = 'a'; 
-  for (int i = 0; i < 26; i++)
+  for (ch = 'a'; ch <= 'z'; ch++)
   {
       putchar(ch);
-      ch++;
   }
   putchar('\n');
 	return (0);
