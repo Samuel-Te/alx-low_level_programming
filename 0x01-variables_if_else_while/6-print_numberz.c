@@ -1,16 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - print 0123456789 using putchar
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
-{ 
-    int a = '0';
-  for (int i = 0; i < 10; i++)
-  {
-      putchar(a);
-      a++;
-  }
-  putchar('\n');
+{
+	int n = '0';
+
+	while (n <= '9')
+	{
+		putchar(n);
+		n++;
+	}
+	putchar('\n');
+
 	return (0);
 }

@@ -1,22 +1,28 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - print lowercase and uppercase a-zA-Z using putchar
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-  char ch = 'a'; 
-  char CH = 'A';
-  for (int i = 0; i < 26; i++)
-  {
-      putchar(ch);
-      ch++;
-  }
-   for (int i = 0; i < 26; i++)
-  {
-      putchar(CH);
-      CH++;
-  }
-  putchar('\n');
+	char lower = 'a';
+	char upper = 'A';
+
+	while (lower <= 'z') /*print lowercases a-z*/
+	{
+		putchar(lower);
+		lower++;
+	}
+
+	while (upper <= 'Z') /*print uppercase A-Z*/
+	{
+		putchar(upper);
+		upper++;
+	}
+
+	putchar('\n');
+
 	return (0);
 }

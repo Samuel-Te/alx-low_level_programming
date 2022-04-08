@@ -1,14 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - print 0123456789
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-  for (int i = 0; i < 10; i++)
-  {
-      printf("%d",i);
-  }
-printf("\n");
+	int n = 0;
+
+	while (n < 10)
+	{
+		printf("%i", n);
+		n++;
+	}
+	putchar('\n');
+
 	return (0);
 }

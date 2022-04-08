@@ -1,22 +1,28 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - prints hexadecimal base 0123456789abcdef, using putchar
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-  int a = '0'; 
-  int ch = 'a';
-  for (int i = 0; i < 10; i++)
-  {
-      putchar(a);
-      a++;
-  }
-  for (int i = 0; i < 6; i++)
-  {
-      putchar(ch);
-      ch++;
-  }
-  putchar('\n');
+	int n = '0';
+	int a_to_f = 'a';
+
+	while (n <= '9') /*print 0-9*/
+	{
+		putchar(n);
+		n++;
+	}
+
+	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
+	{
+		putchar(a_to_f);
+		a_to_f++;
+	}
+
+	putchar('\n');
+
 	return (0);
 }

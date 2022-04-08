@@ -1,16 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *main - print alphabet reversed using putchar
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-  char ch = 'z'; 
-  for (int i = 0; i < 26; i++)
-  {
-      putchar(ch);
-      ch--;
-  }
-  putchar('\n');
+	char alpha = 'z';
+
+	while (alpha >= 'a')
+	{
+		putchar(alpha);
+		alpha--;
+	}
+	putchar('\n');
+
 	return (0);
 }
